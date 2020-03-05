@@ -69,7 +69,10 @@ export const findItem = (numberArray, searchItem) => {
 }
 
 // sortArray(numberArray) //=> [4,3,2,1] *desc*
-
+export const sortArray = (numberArray) => {
+  var sorted = numberArray.sort()
+    return sorted.reverse()
+}
 
 // // -----------------------
 // // BONUS STUFF DOWN THERE

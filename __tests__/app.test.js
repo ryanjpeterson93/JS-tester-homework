@@ -40,13 +40,13 @@ describe('allNumbersGreaterThanZero Test', ()=>{
   })
 })
 
-describe('someNumbersAreOdd', ()=>{
+describe('someNumbersAreOdd Tests', ()=>{
   test('someNumbersAreOdd returns true if odd is found', ()=>{
     expect(someNumbersAreOdd([1,2,3,4])).toBeTruthy()
   })
 })
 
-describe('evensOnlyAndDoubleArray', ()=>{
+describe('evensOnlyAndDoubleArray Tests', ()=>{
   test('evensOnlyAndDoubleArray finds even numbers, then doubles those evens', ()=>{
     expect(evensOnlyAndDoubleArray([1,2,3,4])).toEqual([4,8])
   })
@@ -56,8 +56,13 @@ describe('findItem', ()=>{
   test('findItem returns not found', ()=>{
     expect(findItem([1,2,3,4], 'a')).toEqual('not found')
   })
-  test('findItem returns not found', ()=>{
+  test('findItem returns searched item', ()=>{
     expect(findItem([1,2,3,4], 2)).toEqual(2)
   })
 })
 
+describe('sortArray Tests', ()=>{
+  test('sort array and then reverse array', ()=>{
+    expect(sortArray([1,2,3,4])).toEqual([4,3,2,1])
+  })
+})
